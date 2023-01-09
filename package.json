@@ -5,6 +5,9 @@
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
+  "bin": {
+    "my-hello-lib": "dist/bin/index.js"
+  },
   "files": [
     "dist"
   ],
