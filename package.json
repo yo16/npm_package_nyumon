@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "「 NPMパッケージ作成入門 ~ TypeScriptでつくるJSライブラリ」をなぞる",
   "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "tsc"
+    "build": "run-p build:*",
+    "build:common": "tsc",
+    "build:esm": "tsc -p tsconfig.esm.json"
   },
   "repository": {
     "type": "git",
