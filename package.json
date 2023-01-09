@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "「 NPMパッケージ作成入門 ~ TypeScriptでつくるJSライブラリ」をなぞる",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc"
