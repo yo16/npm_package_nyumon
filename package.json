@@ -2,7 +2,7 @@
   "name": "npm_package_nyumon",
   "version": "1.0.0",
   "description": "「 NPMパッケージ作成入門 ~ TypeScriptでつくるJSライブラリ」をなぞる",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc"
